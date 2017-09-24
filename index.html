@@ -4,17 +4,24 @@
     <meta charset="utf-8">
 	<title>Мое портфолио</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Ledger" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     
 </head>
 <body bgcolor="cfcfcf"> 
-    <header>
-        <h1 align="center">Мой сайт портфолио!</h1>
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        
+        <button type="button" class="btn btn-link">Link</button>
+    <header class="header">
+        <h1 align="header__title">Мой сайт портфолио!</h1>
         <address>
-            <div>Город: Санкт-Петербург</div>
-            <div>Телефон: 8(999) 208-40-01</div>
-        </address>
-    </header>
+            <div>Горо
     <main>
     <aside>
         <form action="auth.php" method="post">
@@ -27,7 +34,7 @@
         <div>
             <h2 class="section-title" align="center"> Мои контакты</h2>  
             <div>
-               <h3 style="color: blue;">Я в соц.сетях</h3>
+               <h3 style="color: #00FF4C;">Я в соц.сетях</h3>
                <ul>
                   <li><a href="https://vk.com/sporeyo" target="_blank" title="Перейти на мою страницу ВК">Я в ВК</a></li>
                </ul>
@@ -46,7 +53,7 @@
     	<h2 class="section-title">Обо мне</h2>
     	   <div>
     		<figure>
-                <img id="my-ava" src="http://lorempixel.com/200/200/sports/" alt="Мой аватар" title="Костин Сергей" border="2">
+                <img id="my-ava" src="../img/my-ava.jpg" alt="Мой аватар" title="Костин Сергей" border="2">
                 <figcaption>
                     Мое фото
                 </figcaption>
@@ -152,5 +159,14 @@
     <footer>
         <div>Это мой сайт. Пожалуйста, не копируйте его.</div>
     </footer>
+    <script>
+
+        $.ajax({
+            url: 'https://dog.ceo/api/breeds/list/all',
+            success: function(data){
+                console.log(data.terrier)
+        }
+        });
+    </script>
 </body>
 </html>
