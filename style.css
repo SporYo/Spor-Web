@@ -1,6 +1,4 @@
 body {
-    font-family: 'Ledger', serif;    
-} 
-body > button.btn.btn-primary {
-    background-color: #000000;
+    font-family: 'Ledger', serif;
+    font-family: 'Exo 2', sans-serif;
 }
